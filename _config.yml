@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Java  
+title: Java成长之路 
 subtitle: 
 description: Inner Peace
 author: kkwei
@@ -71,6 +71,15 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+#sitemap
+sitemap:
+  path: sitemap.xml
+
 ## Themes: https://hexo.io/themes/
 theme: next
 
