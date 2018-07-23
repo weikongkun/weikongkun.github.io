@@ -1,5 +1,7 @@
 ---
 title: Git基础
+tags: Git
+categories: Git
 ---
 
 # Git基础 #
