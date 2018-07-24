@@ -264,6 +264,169 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weikongkun.github.io/2018/07/24/分布式入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kkwei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/alen.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Java成长之路">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/24/分布式入门/" itemprop="url">分布式入门</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-24T21:37:00+08:00">
+                2018-07-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/24/分布式入门/" class="leancloud_visitors" data-flag-title="分布式入门">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          一、CAP分布式系统不可能同时满足一致性(C)、可用性(A)、分区容忍性(P)
+一致性可用性分区容忍性权衡在分布式系统中，分区容忍性必不可少，因为需要总是假设网络是不可靠的。因此，CAP理论实际上是要在可用性上和一致性上做权衡。
+二、BASE基本可用、软状态、最终一致性三个短语的缩写。
+三、2PC两阶段提交
+
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/24/分布式入门/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://weikongkun.github.io/2018/07/23/Git基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -370,9 +533,7 @@
           
           Git基础1、获取Git仓库（1）在现有目录下初始化仓库git init
 该命令将创建一个名为.git的目录，这个字目录含有初始化的Git仓库中所有的必须文件，这些文件是Git仓库的骨干。但是这个时候只是做了一个初始化的操作。
-（2）克隆现有的仓库如果想参与某个项目的开发，贡献自己的一份力，这是需要用git clone命令，clone是负值Git仓库服务器上的几乎所有数据，不仅仅是复制文件，执行git clone命令的时候，默认复制远程仓库每一个文件的每一个版本（分支）都将被拉取下来。
-git clone [url]
-Git支持多种传输协议：http://协议，git://协议，SSH传输协议
+（2）克隆现有的仓库如果想参与某个项目的开发，贡献自己的一份力，这是需要用git clone命令，clone是负值Git仓库服务器上的几乎所有数据，不仅仅是复制文件，执行g
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -532,8 +693,7 @@ Git支持多种传输协议：http://协议，git://协议，SSH传输协议
         
           
           Git分支1、分支简介
-在进行提交操作时，Git 会保存一个提交对象（commit object）。知道了 Git 保存数据的方式，我们可以很自然的想到——该提交对象会包含一个指向暂存内容快照的指针。 但不仅仅是这样，该提交对象还包含了作者的姓名和邮箱、提交时输入的信息以及指向它的父对象的指针。首次提交产生的提交对象没有父对象，普通提交操作产生的提交对象有一个父对象，而由多个分支合并产生的提交对象有多个父对象，
-为了更加形象地说明，我们假设现在有一个工作目录，里面包含了三个将要被暂存和提交的文件。 暂存操作会为每一个文件计算校验和（使用我们在 起步 中提到的 SHA-1 哈希算法），然后会把当
+在进行提交操作时，Git 会保存一个提交对象（commit object）。知道了 Git 保存数据的方式，我们可以很自然的想到——该提交对象会包含一个指向暂存内容快照的指针。 但不仅仅是这样，该提交对象还包含了作者的姓名和邮箱、提交时输入的信息以及指向它的父对象的指针。首次提交产生的提交对象没有父对象，普通提交操作产生的提交对象有一个父对象，而由多个分支合并产生的提交对象
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -625,7 +785,7 @@ Git支持多种传输协议：http://协议，git://协议，SSH传输协议
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -636,7 +796,7 @@ Git支持多种传输协议：http://协议，git://协议，SSH传输协议
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -647,7 +807,7 @@ Git支持多种传输协议：http://协议，git://协议，SSH传输协议
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
