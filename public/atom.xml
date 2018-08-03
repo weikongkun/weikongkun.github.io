@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weikongkun.github.io/"/>
-  <updated>2018-08-03T15:38:48.551Z</updated>
+  <updated>2018-08-03T15:45:56.821Z</updated>
   <id>https://weikongkun.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://weikongkun.github.io/2018/08/03/%E9%9D%A2%E8%AF%95/"/>
-    <id>https://weikongkun.github.io/2018/08/03/面试/</id>
-    <published>2018-08-03T15:32:33.367Z</published>
-    <updated>2018-08-03T15:38:48.551Z</updated>
+    <title>面经</title>
+    <link href="https://weikongkun.github.io/2018/08/03/%E9%9D%A2%E7%BB%8F/"/>
+    <id>https://weikongkun.github.io/2018/08/03/面经/</id>
+    <published>2018-08-03T15:44:07.000Z</published>
+    <updated>2018-08-03T15:45:56.821Z</updated>
     
     <content type="html"><![CDATA[<h1 id="蚂蚁金服提前批中间件"><a href="#蚂蚁金服提前批中间件" class="headerlink" title="蚂蚁金服提前批中间件"></a>蚂蚁金服提前批中间件</h1><h2 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h2><h2 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h2><h2 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h2><p>线程池：线程池中线程name的设置。线程池线程执行栈的观测方法。线程池中线程怎么得知线程的状态。</p><p>分布式框架</p><p>TCP/IP：TCP为什么是可靠的</p><p>Linux：线程进程的操作</p>]]></content>
     
@@ -34,6 +34,10 @@
     
     </summary>
     
+      <category term="面试" scheme="https://weikongkun.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="面试" scheme="https://weikongkun.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
