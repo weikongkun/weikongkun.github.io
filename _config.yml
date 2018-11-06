@@ -87,5 +87,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:weikongkun/weikongkun.github.io.git
+  repo: 
+    wkk: git@94.191.98.17:/home/git/blog.git
+    github: git@github.com:weikongkun/weikongkun.github.io.git
   branch: master

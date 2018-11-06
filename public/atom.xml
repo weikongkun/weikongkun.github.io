@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weikongkun.github.io/"/>
-  <updated>2018-09-28T11:51:36.276Z</updated>
+  <updated>2018-11-06T13:43:49.780Z</updated>
   <id>https://weikongkun.github.io/</id>
   
   <author>
@@ -17,20 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《现代操作系统》总结</title>
+    <link href="https://weikongkun.github.io/2018/11/06/%E3%80%8A%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E3%80%8B%E6%80%BB%E7%BB%93/"/>
+    <id>https://weikongkun.github.io/2018/11/06/《现代操作系统》总结/</id>
+    <published>2018-11-06T13:29:37.000Z</published>
+    <updated>2018-11-06T13:43:49.780Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="操作系统" scheme="https://weikongkun.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="操作系统" scheme="https://weikongkun.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java堆外内存</title>
     <link href="https://weikongkun.github.io/2018/09/28/Java%E5%A0%86%E5%A4%96%E5%86%85%E5%AD%98/"/>
     <id>https://weikongkun.github.io/2018/09/28/Java堆外内存/</id>
     <published>2018-09-28T11:43:57.000Z</published>
-    <updated>2018-09-28T11:51:36.276Z</updated>
+    <updated>2018-09-28T12:41:54.490Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="为什么使用堆外内存"><a href="#为什么使用堆外内存" class="headerlink" title="为什么使用堆外内存"></a>为什么使用堆外内存</h1><ul><li>将长期存活的对象移入堆外内存，从而减少CMS管理的对象数量，降低Full GC的次数和频率，达到提高系统响应速度的目的。</li><li>加快复制的速度：堆内在缓存到远程时，会先复制到直接内存，然后再发送，而堆外内存相当于省略了这个工作。</li></ul><h1 id="堆外内存的使用"><a href="#堆外内存的使用" class="headerlink" title="堆外内存的使用"></a>堆外内存的使用</h1><p>JDK1.4新加入NIO，引入了一种基于Channel与Buffer的I/O方式，可以使用Native函数库直接分配堆外内存</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="为什么使用堆外内存"><a href="#为什么使用堆外内存" class="headerlink" title="为什么使用堆外内存"></a>为什么使用堆外内存</h1><ul><li><p>来源于TaobaoJVM对OpenJDK定制开发的GCIH部分，其中GCIH就是将CMS Old Heap区的一部分划分出来，这部分内存虽然还在堆中，但是已经不被GC所管理，将长生命周期Java对象放在Java堆外，GC不能管理GCIH内Java对象。</p></li><li><p>将长期存活的对象移入堆外内存，从而减少CMS管理的对象数量，降低Full GC的次数和频率，达到提高系统响应速度的目的。</p></li><li>加快复制的速度：堆内在缓存到远程时，会先复制到直接内存，然后再发送，而堆外内存相当于省略了这个工作。</li><li>这部分内容可以进程间共享，这样一台Server就都可以跑更多的VM实例。</li></ul><h1 id="堆外内存的使用"><a href="#堆外内存的使用" class="headerlink" title="堆外内存的使用"></a>堆外内存的使用</h1><p>JDK1.4新加入NIO，引入了一种基于Channel与Buffer的I/O方式，可以使用Native函数库直接分配堆外内存。</p><p>由JDK提供的</p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h1 id=&quot;为什么使用堆外内存&quot;&gt;&lt;a href=&quot;#为什么使用堆外内存&quot; class=&quot;headerlink&quot; title=&quot;为什么使用堆外内存&quot;&gt;&lt;/a&gt;为什么使用堆外内存&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;将长期存活的对象移入堆外内存，从而减少CMS管理的对象数量，降低Full
+&lt;li&gt;&lt;p&gt;来源于TaobaoJVM对OpenJDK定制开发的GCIH部分，其
       
     
     </summary>
