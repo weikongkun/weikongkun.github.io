@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Java成长之路">
 <meta property="og:description" content="为什么使用堆外内存 来源于TaobaoJVM对OpenJDK定制开发的GCIH部分，其中GCIH就是将CMS Old Heap区的一部分划分出来，这部分内存虽然还在堆中，但是已经不被GC所管理，将长生命周期Java对象放在Java堆外，GC不能管理GCIH内Java对象。  将长期存活的对象移入堆外内存，从而减少CMS管理的对象数量，降低Full GC的次数和频率，达到提高系统响应速度的目的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-28T12:41:54.490Z">
+<meta property="og:updated_time" content="2018-11-06T13:54:16.106Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java堆外内存">
 <meta name="twitter:description" content="为什么使用堆外内存 来源于TaobaoJVM对OpenJDK定制开发的GCIH部分，其中GCIH就是将CMS Old Heap区的一部分划分出来，这部分内存虽然还在堆中，但是已经不被GC所管理，将长生命周期Java对象放在Java堆外，GC不能管理GCIH内Java对象。  将长期存活的对象移入堆外内存，从而减少CMS管理的对象数量，降低Full GC的次数和频率，达到提高系统响应速度的目的。">
@@ -270,7 +270,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kkwei">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/alen.jpg">
+      <meta itemprop="image" content="/images/py.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -385,6 +385,35 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="kkwei 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/aipay.png" alt="kkwei 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -489,7 +518,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/alen.jpg"
+                src="/images/py.jpg"
                 alt="kkwei" />
             
               <p class="site-author-name" itemprop="name">kkwei</p>
