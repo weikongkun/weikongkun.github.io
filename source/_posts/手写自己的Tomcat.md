@@ -6,7 +6,7 @@ categories: Tomcat
 
 ---
 
-# 程序结构：
+# 程序结构
 
 ```java
 +---config
@@ -31,7 +31,6 @@ categories: Tomcat
 
 ```java
 package com.pywkk.server;
-
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -46,16 +45,13 @@ public class MyRequest {
 		if ((length = inputStream.read(httpRequestBytes)) > 0) {
 			httpRequest = new String(httpRequestBytes, 0, length);
 		}
-		
 		String httpLine = httpRequest.split("\n")[0];//得到请求消息行
 		url = httpLine.split("\\s")[1];//得到url
 		method = httpLine.split("\\s")[0];//得到方法类型
 	}
-	
 	public String getUrl() {
 		return url;
 	}
-
 	public String getMethod() {
 		return method;
 	}
@@ -66,7 +62,6 @@ public class MyRequest {
 
 ```java
 package com.pywkk.server;
-
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -96,15 +91,12 @@ public class MyResponse {
 
 ```java
 package com.pywkk;
-
 import com.pywkk.server.MyRequest;
 import com.pywkk.server.MyResponse;
 
 public abstract class MyServlet {
 	public abstract void doGet(MyRequest myRequest, MyResponse myResponse);
-	
 	public abstract void doPost(MyRequest myRequest, MyResponse myResponse);
-	
 	public void service(MyRequest myRequest, MyResponse myResponse) {
 		if ("GET".equalsIgnoreCase(myRequest.getMethod()))
 			doGet(myRequest, myResponse);
@@ -120,37 +112,28 @@ DemoServlet_01.java
 
 ```java
 package com.pywkk.servlets;
-
 import java.io.IOException;
-
 import com.pywkk.MyServlet;
 import com.pywkk.server.MyRequest;
 import com.pywkk.server.MyResponse;
 
 public class DemoServlet_01 extends MyServlet {
-
 	@Override
 	public void doGet(MyRequest myRequest, MyResponse myResponse) {
 		try {
 			myResponse.write("DemoServlet_01 get method......");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
-
 	@Override
 	public void doPost(MyRequest myRequest, MyResponse myResponse) {
 		try {
 			myResponse.write("DemoServlet_01 post method......");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
-	
 }
 ```
 
@@ -158,21 +141,17 @@ DemoServlet_HelloWorld.java
 
 ```java
 package com.pywkk.servlets;
-
 import java.io.IOException;
-
 import com.pywkk.MyServlet;
 import com.pywkk.server.MyRequest;
 import com.pywkk.server.MyResponse;
 
 public class DemoServlet_HelloWorld extends MyServlet {
-
 	@Override
 	public void doGet(MyRequest myRequest, MyResponse myResponse) {
 		try {
 			myResponse.write("DemoServlet_HelloWorld get method......");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -182,7 +161,6 @@ public class DemoServlet_HelloWorld extends MyServlet {
 		try {
 			myResponse.write("DemoServlet_HelloWorld post method......");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -201,7 +179,6 @@ public class ServletMapping {
 	private String servletName;//servlet命名
 	private String url;//映射的url
 	private String clazz;//对应的类名
-	
 	public ServletMapping(String servletName, String url, String clazz) {
 		this.servletName = servletName;
 		this.url = url;
@@ -232,7 +209,6 @@ public class ServletMapping {
 
 ```java
 package com.pywkk.config;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -267,7 +243,6 @@ import com.pywkk.server.MyResponse;
 public class MyTomcat {
 	private int port = 8080;//默认端口8080
 	private Map<String, String> urlServlet = new HashMap<>();
-	
 	public MyTomcat(int port) {
 		this.port = port;
 	}
@@ -322,11 +297,11 @@ public class MyTomcat {
 }
 ```
 
-### 待改进......
+**待改进......**
 
-# 参考目录：
+# 参考目录
 
-1、[写一款 Tomcat 也没有那么难](https://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=2247485667&idx=1&sn=98a48800561d8e06c71ba3c20cf52b1c&chksm=e8fe94eadf891dfc1ca53e3487f8425002e43251777f71d43efed3bb7a7f45154897abb6ecf6&mpshare=1&scene=23&srcid=1108RGTEgqXo8eZ9csKs4qxW#rd)
+[写一款 Tomcat 也没有那么难](https://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=2247485667&idx=1&sn=98a48800561d8e06c71ba3c20cf52b1c&chksm=e8fe94eadf891dfc1ca53e3487f8425002e43251777f71d43efed3bb7a7f45154897abb6ecf6&mpshare=1&scene=23&srcid=1108RGTEgqXo8eZ9csKs4qxW#rd)
 
 
 
