@@ -121,4 +121,4 @@ master不是iss53的直接祖先，这样不得不做一些额外的工作，Git
 
 # 参考目录
 
-[The entire Pro Git book ](https://git-scm.com/book/zh/v2)
+- [The entire Pro Git book ](https://git-scm.com/book/zh/v2)

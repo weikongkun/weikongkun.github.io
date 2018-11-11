@@ -157,7 +157,8 @@ commit用ci来代替
 
 # 参考目录
 
-[The entire Pro Git book ](https://git-scm.com/book/zh/v2)
+- [The entire Pro Git book ](https://git-scm.com/book/zh/v2)
+
 
 ​    
 
